@@ -106,7 +106,7 @@ const About = () => {
           name="img"
           className="hidden md:flex items-center pb-54 justify-center mx-auto object-center  w-[3000px]"
         >
-          <Image src="/portfolio.gif" alt="/" height={1000} width={1000} className=""/>
+          <img src="/portfolio.gif" alt="/" height={1000} width={1000} className=""/>
           
   
         </div>
