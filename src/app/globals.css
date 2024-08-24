@@ -2,32 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.animation-delay-5000 {
+    animation-delay: 1s;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .animation-delay-6000 {
+    animation-delay: 1.5s;
   }
-}
+  .animation-delay-7000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-8000 {
+    animation-delay: 2.5s;
+  }
+  .animation-delay-9000 {
+    animation-delay: 3s;
+  }
+  .animation-delay-10000 {
+    animation-delay: 3.5s;
+  }
+
+  @keyframes scroll-horizontal {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .horizontal-auto-scroll {
+    animation: scroll-horizontal 20s linear infinite;
+    white-space: nowrap; /* Ensures items stay on a single line */
+  }
+  
+  
